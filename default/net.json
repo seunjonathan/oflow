@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1777410541526,
+    "description" : "Initial netsuite",
+    "identifier" : "net",
+    "lastModifiedTimestamp" : 1777410541526,
+    "name" : "net",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
