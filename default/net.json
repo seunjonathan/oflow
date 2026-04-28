@@ -1003,7 +1003,7 @@
       "zIndex" : 2
     } ],
     "maxConcurrentTasks" : 1,
-    "name" : "NetSuite Test_g",
+    "name" : "NnetSuite Test",
     "outputPorts" : [ ],
     "parameterContextName" : "NetSuites_Source_Parameters",
     "position" : {
@@ -21752,7 +21752,7 @@
       "inputPorts" : [ ],
       "labels" : [ ],
       "maxConcurrentTasks" : 1,
-      "name" : "TBLVENDORS",
+      "name" : "TBLVENDORS NEW",
       "outputPorts" : [ ],
       "parameterContextName" : "NetSuites_Source_Parameters",
       "position" : {
@@ -37237,7 +37237,57 @@
       "scheduledState" : "ENABLED",
       "statelessFlowTimeout" : "1 min"
     } ],
-    "processors" : [ ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "runtime-salesforce-processors-nar",
+        "group" : "com.snowflake.openflow.runtime",
+        "version" : "2026.4.16.18"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "33258ac2-37b7-36b4-90a5-35ead9fcb26b",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "AbortQueryJob",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -1983.036467833746,
+        "y" : 1664.3367113086822
+      },
+      "properties" : {
+        "Job ID" : "${jobId}"
+      },
+      "propertyDescriptors" : {
+        "Job ID" : {
+          "displayName" : "Job ID",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Job ID",
+          "sensitive" : false
+        },
+        "Salesforce Client" : {
+          "displayName" : "Salesforce Client",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Salesforce Client",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "com.snowflake.openflow.runtime.processors.salesforce.AbortQueryJob",
+      "yieldDuration" : "1 sec"
+    } ],
     "remoteProcessGroups" : [ ],
     "scheduledState" : "ENABLED",
     "statelessFlowTimeout" : "1 min"
@@ -37372,6 +37422,6 @@
   "snapshotMetadata" : {
     "author" : "OLU.JONATHAN@DENALIWATER.COM",
     "flowIdentifier" : "net",
-    "timestamp" : 1777410542601
+    "timestamp" : 1777411856016
   }
 }
