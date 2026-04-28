@@ -1003,7 +1003,7 @@
       "zIndex" : 2
     } ],
     "maxConcurrentTasks" : 1,
-    "name" : "NnetSuite Test",
+    "name" : "NnetSuite Tester",
     "outputPorts" : [ ],
     "parameterContextName" : "NetSuites_Source_Parameters",
     "position" : {
